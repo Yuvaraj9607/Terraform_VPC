@@ -10,23 +10,23 @@ variable "secret_key" {
 }
 variable "cidr_vpc" {
   
-  default = "10.0.0.0/24"
+  default = "10.0.0.0/16"
 }
 variable "subpub1" {
   
-  default = "10.0.5.0/24"
+  default = "10.0.5.0/16"
 }
 variable "subpub2" {
   
-  default = "10.0.6.0/24"
+  default = "10.0.6.0/16"
 }
 variable "subpvt1" {
 
-  default = "10.0.7.0/24"
+  default = "10.0.7.0/16"
 }
 variable "subpvt2" {
  
-  default = "10.0.8.0/24"
+  default = "10.0.8.0/16"
 }
 variable "az_subnet1" {
   default = "ap-south-1a"
