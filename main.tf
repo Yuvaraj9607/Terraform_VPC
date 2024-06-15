@@ -76,10 +76,10 @@ resource "aws_route_table" "pvtrt2" {
   }
 }
 resource "aws_eip" "eip1" {
-  domain = aws_vpc.myvpc
+  domain = "vpc"
 }
 resource "aws_eip" "eip2" {
-  domain = aws_vpc.myvpc
+  domain = "vpc"
 }
 resource "aws_nat_gateway" "pvtnat1" {
   allocation_id = aws_eip.eip1.id
