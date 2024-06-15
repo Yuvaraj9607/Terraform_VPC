@@ -14,19 +14,19 @@ variable "cidr_vpc" {
 }
 variable "subpub1" {
   
-  default = "192.168.0.0/16"
+  default = "192.168.5.0/16"
 }
 variable "subpub2" {
   
-  default = "192.168.0.0/16"
+  default = "192.168.6.0/16"
 }
 variable "subpvt1" {
 
-  default = "192.168.0.0/16"
+  default = "192.168.7.0/16"
 }
 variable "subpvt2" {
  
-  default = "179.168.0.0/16"
+  default = "192.168.8.0/16"
 }
 variable "az_subnet1" {
   default = "ap-south-1a"
