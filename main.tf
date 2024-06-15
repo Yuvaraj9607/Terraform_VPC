@@ -86,8 +86,16 @@ resource "aws_nat_gateway" "pvtnat1" {
   subnet_id = aws_subnet.subpvt1.id
 }
 resource "aws_nat_gateway" "pvtnat2" {
-  allocation_id = aws_eip.eip1.id
+  allocation_id = aws_eip.eip2.id
   subnet_id = aws_subnet.subpvt2.id
+}
+resource "aws_route_table_association" "subpvt1_assoc" {
+  subnet_id = aws_subnet.subpvt1.id
+  route_table_id = aws_route_table.pvtrt1.id
+}
+resource "aws_route_table_association" "subpvt2_assoc" {
+  subnet_id = aws_subnet.subpvt2.id
+  route_table_id = aws_route_table.pvtrt2.id
 }
 # resource "aws_security_group" "pubsg" {
 #   vpc_id = aws_vpc.myvpc.id
