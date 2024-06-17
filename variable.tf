@@ -3,10 +3,10 @@ variable "name" {
   default = "Terraform vpc"
 }
 variable "access_key" {
-  default = "AKIA5MGJNN5VAOFGIMUX"
+  default = "access_key"
 }
 variable "secret_key" {
-  default = "3mBOAHoVx40duXACLErygwjhKiOmQpw+sdwZf3DF"
+  default = "secret_key"
 }
 variable "cidr_vpc" {
   
